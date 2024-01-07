@@ -2,15 +2,15 @@
 
 /* Common shared styles */
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .common-text {
     color: #444343;
-    /* text-align: right; */
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -26,6 +26,11 @@
     background: #F15B22;
     padding: 22px;
 
+}
+.common-title{
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 /* header styles */
@@ -60,4 +65,36 @@ header .banner .banner-description {
     max-width: 500px;
     margin: 0;
     text-align: right;
+}
+
+/* My failure section styles */
+.failure-container {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 230px;
+}
+
+.failure-container .failure-me img {
+    width: 100%;
+}
+
+.failure-container .failure-items .failure-title {
+    max-width: 288px;
+    margin-bottom:25px;
+}
+
+.failure-container .failure-items .failure-description{
+    max-width:416px;
+    /* margin: 0; */
+}
+
+.failure-container .failure-items ul{
+    list-style:none;
+    display:inline;
+}
+
+.failure-container .failure-items ul li i{
+    color:#16D887;
 }
